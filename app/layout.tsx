@@ -6,8 +6,9 @@ import { Toaster } from "@/components/ui/toaster";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Stable Homes",
-  description: "Building dreams with precision and excellence",
+  title: "Princetech Electricals & General Services",
+  description:
+    "our Trusted Partner forSafe, Reliable & ProfessionalElectrical Solutions",
 };
 
 export default function RootLayout({
