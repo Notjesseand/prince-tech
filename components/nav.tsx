@@ -30,11 +30,7 @@ const Nav = () => {
     <nav className="fixed top-0 left-0 w-full bg-[#1a1a1a]/95 backdrop-blur-sm px-6 md:px-16 py-3 sm:py-2 flex justify-between items-center z-50 shadow-md transition-colors">
       {/* Logo */}
       <Link href="/">
-        <img
-          src="/logo.png"
-          alt="Logo"
-          className="h-[54px] md:h-16"
-        />
+        <img src="/logo.png" alt="Logo" className="h-[54px] md:h-16" />
       </Link>
 
       {/* Desktop Menu */}
@@ -85,30 +81,33 @@ const Nav = () => {
                 <ul className="grid w-[250px] gap-3 p-4">
                   {[
                     {
-                      href: "/services/building",
-                      label: "Building Construction",
+                      href: "/services/electrical-installation",
+                      label: "Electrical Installations",
                     },
                     {
-                      href: "/services/block-industry",
-                      label: "Industrial Scale Block Production",
+                      href: "/services/wiring-rewiring",
+                      label: "Wiring & Rewiring",
                     },
                     {
-                      href: "/services/flooring-roofing",
-                      label: "Flooring and Roofing",
+                      href: "/services/inverter-solar",
+                      label: "Inverter & Solar Solutions",
                     },
                     {
-                      href: "/services/architecture-design",
-                      label: "Architecture Design",
+                      href: "/services/cctv-security",
+                      label: "CCTV & Security Systems",
                     },
                     {
-                      href: "/services/renovation",
-                      label: "Renovation & Remodeling",
+                      href: "/services/maintenance-repairs",
+                      label: "Maintenance & Repairs",
                     },
-                    { href: "/services/civil", label: "Civil Engineering" },
-                    { href: "/services/interior", label: "Interior Design" },
                     {
-                      href: "/services/project-management",
-                      label: "Project Management",
+                      href: "/services/industrial-electrical",
+                      label: "Industrial Electrical Services",
+                    },
+
+                    {
+                      href: "/services/consultation-inspection",
+                      label: "Consultation & Inspection",
                     },
                   ].map((service) => (
                     <li key={service.href}>

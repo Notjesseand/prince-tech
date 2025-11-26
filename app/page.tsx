@@ -24,27 +24,27 @@ const Page = () => {
   const services = [
     {
       title: "Electrical Installations",
-      desc: "Safe, professional installation of wiring, lighting, power systems, distribution boards, and electrical fixtures for homes, offices, and construction projects.",
-      bg: "wiring-2.jpg",
-      slug: "block-industry",
+      desc: "Safe, professional installation of wiring, lighting, surveillance systems, power systems, distribution boards, and electrical fixtures for homes, offices, and construction projects.",
+      bg: "/services/cctv-2.jpg",
+      slug: "electrical-installation",
     },
     {
       title: "Electrical Maintenance & Repairs",
       desc: "From troubleshooting faults to replacing faulty components, we ensure your electrical systems remain stable, efficient, and hazard-free.",
       bg: "/maintenance.jpg",
-      slug: "building",
+      slug: "maintenance-repairs",
     },
     {
       title: "Building & Construction Electrical Supervision",
       desc: "We provide expert oversight for construction projects — ensuring electrical work is done to standard, follows safety regulations, and meets engineering requirements.",
       bg: "/supervison.jpg",
-      slug: "architecture-design",
+      slug: "industrial-electrical",
     },
     {
       title: "Solar, Generator & Power Systems Setup",
       desc: "Installation, servicing, and maintenance of generators, inverters, and backup power systems for seamless, uninterrupted electricity",
       bg: "/solar.jpg",
-      slug: "renovation",
+      slug: "inverter-solar",
     },
   ];
 
@@ -163,7 +163,7 @@ const Page = () => {
   return (
     <div className="font-montserrat overflow-hidden">
       <Nav />
-      <div className="h-screen sm:h-[105vh]  bg-[url(/bg-test.jpg)] bg-cover bg-center relative">
+      <div className="h-screen sm:h-[110vh]  bg-[url(/bg-test.jpg)] bg-cover bg-center relative">
         {/* overlay */}
         <div className="absolute inset-0 bg-black/70"></div>
 
@@ -388,16 +388,12 @@ const Page = () => {
                 {/* Content wrapper */}
                 <Link
                   href={`services/${service.slug}`}
-                  className="relative z-10 flex h-full w-full flex-col justify-end px-3 md:px-4 py-2 text-white"
+                  className="relative z-10 flex h-full w-full flex-col justify-center px-3 md:px-4 py-2 text-white"
                 >
                   {/* Title */}
                   <p
-                    className={`text-lg md:text-xl font-semibold text-center transition-all duration-500 md:transform
-                    ${
-                      isActive
-                        ? "-translate-y-[100%]"
-                        : "group-hover:-translate-y-[100%]"
-                    }`}
+                    className={`text-lg md:text-xl font-semibold text-center transition-all duration-500 
+                       `}
                   >
                     {service.title}
                   </p>
@@ -405,11 +401,7 @@ const Page = () => {
                   {/* Description */}
                   <p
                     className={`text-xs md:text-sm text-center mt-3 transition-all duration-500
-                    ${
-                      isActive
-                        ? "opacity-100 -translate-y-6"
-                        : "opacity-0 translate-y-6 group-hover:opacity-100 group-hover:-translate-y-6"
-                    }`}
+                       `}
                   >
                     {service.desc}
                   </p>
@@ -428,7 +420,7 @@ const Page = () => {
           viewport={{ once: true }}
         >
           <Link
-            href="/services/block-industry"
+            href="/services/electrical-installation"
             className="w-full h-full px-6 md:px-8 py-2 items-center flex"
           >
             View all services
@@ -620,13 +612,16 @@ const Page = () => {
             </p>
             <div className="space-y-4">
               <p className="flex items-center text-gray-700">
-                📍 <span className="ml-3">123 Main Street, Abuja, Nigeria</span>
+                📍{" "}
+                <span className="ml-3">
+                  123 Main Street, Abia State, Nigeria
+                </span>
               </p>
               <p className="flex items-center text-gray-700">
                 📞 <span className="ml-3">+234 909 909 7788</span>
               </p>
               <p className="flex items-center text-gray-700">
-                ✉️ <span className="ml-3">info@stablehomes.com</span>
+                ✉️ <span className="ml-3">info@princetech.com</span>
               </p>
             </div>
           </motion.div>
