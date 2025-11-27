@@ -178,7 +178,6 @@
 
 // export default Footer;
 
-
 // // components/Footer.tsx
 // import React from "react";
 // import Link from "next/link";
@@ -355,7 +354,6 @@
 
 // export default Footer;
 
-
 // components/Footer.tsx
 import React from "react";
 import Link from "next/link";
@@ -367,13 +365,26 @@ import {
 } from "react-icons/fa";
 
 const serviceLinks = [
-  { href: "/services/electrical-installation", label: "Electrical Installations" },
+  {
+    href: "/services/electrical-installation",
+    label: "Electrical Installations",
+  },
   { href: "/services/wiring-rewiring", label: "Wiring & Rewiring" },
+  {
+    href: "/services/construction-projects",
+    label: "Construction & Building Services",
+  },
   { href: "/services/inverter-solar", label: "Inverter & Solar Solutions" },
   { href: "/services/cctv-security", label: "CCTV & Security Systems" },
   { href: "/services/maintenance-repairs", label: "Maintenance & Repairs" },
-  { href: "/services/industrial-electrical", label: "Industrial Electrical Services" },
-  { href: "/services/consultation-inspection", label: "Consultation & Inspection" },
+  {
+    href: "/services/industrial-electrical",
+    label: "Industrial Electrical Services",
+  },
+  {
+    href: "/services/consultation-inspection",
+    label: "Consultation & Inspection",
+  },
 ];
 
 const scrollToSection = (id: string) => {
