@@ -610,17 +610,41 @@ const Page = () => {
               Fill out the form and our team will get back to you within 24
               hours.
             </p>
+
             <div className="space-y-4">
               <p className="flex items-center text-gray-700">
                 📍 <span className="ml-3">Abia State, Nigeria</span>
               </p>
+
               <p className="flex items-center text-gray-700">
-                📞 <span className="ml-3">+234 806 3636 497</span>
+                📞{" "}
+                <a
+                  href="tel:+2348063636497"
+                  className="ml-3 text-blue-600 hover:underline"
+                >
+                  +234 806 3636 497
+                </a>
               </p>
+
               <p className="flex items-center text-gray-700">
-                ✉️ <span className="ml-3">ndukap23@gmail.com</span>
+                ✉️{" "}
+                <a
+                  href="mailto:ndukap23@gmail.com"
+                  className="ml-3 text-blue-600 hover:underline"
+                >
+                  ndukap23@gmail.com
+                </a>
               </p>
             </div>
+
+            {/* WhatsApp contact button */}
+            <a
+              href="https://wa.me/2348063636497?text=Hello%2C%20I%20would%20like%20to%20make%20an%20enquiry"
+              target="_blank"
+              className="mt-6 flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-medium py-3 rounded-xl transition-all"
+            >
+              <span className="mr-2">💬</span> Contact on WhatsApp
+            </a>
           </motion.div>
 
           {/* Contact Form */}
