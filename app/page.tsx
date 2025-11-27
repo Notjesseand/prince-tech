@@ -400,7 +400,7 @@ const Page = () => {
 
                   {/* Description */}
                   <p
-                    className={`text-xs md:text-sm text-center mt-3 transition-all duration-500
+                    className={`text-sm md:text-sm text-center mt-3 transition-all duration-500
                        `}
                   >
                     {service.desc}
