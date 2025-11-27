@@ -188,30 +188,33 @@ const Nav = () => {
                 <div className="flex flex-col gap-2 pl-3 mt-2">
                   {[
                     {
-                      href: "/services/building",
-                      label: "Building Construction",
+                      href: "/services/electrical-installation",
+                      label: "Electrical Installations",
                     },
                     {
-                      href: "/services/block-industry",
-                      label: "Industrial Scale Block Production",
+                      href: "/services/wiring-rewiring",
+                      label: "Wiring & Rewiring",
                     },
                     {
-                      href: "/services/flooring-roofing",
-                      label: "Flooring and Roofing",
+                      href: "/services/inverter-solar",
+                      label: "Inverter & Solar Solutions",
                     },
                     {
-                      href: "/services/architecture-design",
-                      label: "Architecture Design",
+                      href: "/services/cctv-security",
+                      label: "CCTV & Security Systems",
                     },
                     {
-                      href: "/services/renovation",
-                      label: "Renovation & Remodeling",
+                      href: "/services/maintenance-repairs",
+                      label: "Maintenance & Repairs",
                     },
-                    { href: "/services/civil", label: "Civil Engineering" },
-                    { href: "/services/interior", label: "Interior Design" },
                     {
-                      href: "/services/project-management",
-                      label: "Project Management",
+                      href: "/services/industrial-electrical",
+                      label: "Industrial Electrical Services",
+                    },
+
+                    {
+                      href: "/services/consultation-inspection",
+                      label: "Consultation & Inspection",
                     },
                   ].map((service, index) => (
                     <Link
