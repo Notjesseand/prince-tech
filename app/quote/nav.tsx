@@ -69,6 +69,10 @@ const Nav = () => {
                       label: "Wiring & Rewiring",
                     },
                     {
+                      href: "/services/construction-projects",
+                      label: "Construction & Building Services",
+                    },
+                    {
                       href: "/services/inverter-solar",
                       label: "Inverter & Solar Solutions",
                     },
@@ -149,6 +153,10 @@ const Nav = () => {
                     {
                       href: "/services/electrical-installation",
                       label: "Electrical Installations",
+                    },
+                    {
+                      href: "/services/construction-projects",
+                      label: "Construction & Building Services",
                     },
                     {
                       href: "/services/wiring-rewiring",
