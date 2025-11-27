@@ -22,7 +22,6 @@ export default function ContactPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Contact form submitted:", formData);
-    // TODO: send formData to backend or email service
     alert("Your message has been sent successfully!");
     setFormData({ name: "", email: "", subject: "", message: "" });
   };
@@ -31,6 +30,7 @@ export default function ContactPage() {
     <>
       <div className="min-h-screen bg-[#f9f9f9] flex flex-col justify-center items-center px-6 md:px-16 py-16">
         <Nav />
+
         {/* Heading */}
         <div className="text-center max-w-2xl mx-auto mb-12 pt-20">
           <p className="text-orange-500 font-semibold text-lg">Contact Us</p>
@@ -114,22 +114,30 @@ export default function ContactPage() {
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl w-full text-center">
           <div className="bg-white shadow-sm rounded-xl p-6">
             <h3 className="font-semibold text-gray-800">📍 Address</h3>
-            <p className="text-gray-600 mt-2">
-              123 Main Street, Lagos, Nigeria
-            </p>
+            <p className="text-gray-600 mt-2">Abia State, Nigeria</p>
           </div>
 
           <div className="bg-white shadow-sm rounded-xl p-6">
             <h3 className="font-semibold text-gray-800">📧 Email</h3>
-            <p className="text-gray-600 mt-2">info@stablehomes.com</p>
+            <p className="text-gray-600 mt-2">ndukap23@gmail.com</p>
           </div>
 
           <div className="bg-white shadow-sm rounded-xl p-6">
             <h3 className="font-semibold text-gray-800">📞 Phone</h3>
-            <p className="text-gray-600 mt-2">+234 800 123 4567</p>
+            <p className="text-gray-600 mt-2">+234 806 363 6497</p>
           </div>
+
+          {/* WhatsApp contact button */}
+          <a
+            href="https://wa.me/2348063636497?text=Hello%2C%20I%20would%20like%20to%20make%20an%20enquiry"
+            target="_blank"
+            className="mt-6 flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-medium py-3 rounded-xl transition-all"
+          >
+            <span className="mr-2">💬</span> Contact on WhatsApp
+          </a>
         </div>
       </div>
+
       <Footer />
     </>
   );
