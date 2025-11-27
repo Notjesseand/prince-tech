@@ -135,7 +135,12 @@ export const services = [
       "Installation of sockets, switches & lighting",
       "Compliance with safety and regulatory standards",
     ],
-    images: ["/wiring-8.jpg", "/switch.jpg", "/socket.jpg"],
+    images: [
+      "/installation.jpg",
+      "/socket.jpg",
+      "/switch.jpg",
+      ,"/wiring-8.jpg"
+    ],
   },
   {
     slug: "construction-projects",
@@ -208,7 +213,7 @@ export const services = [
       "Emergency repair services",
       "Diagnostics & fault detection",
     ],
-    images: ["/wiring.jpg", "/wiring-2.jpg"],
+    images: ["/electrical-maintenance.jpg", "/wiring.jpg"],
   },
   {
     slug: "industrial-electrical",
@@ -221,7 +226,7 @@ export const services = [
       "Industrial machinery installation",
       "Energy optimization",
     ],
-    images: ["/industrial.jpg", "/industrial-2.jpg"],
+    images: ["/industrial-3.jpg", "/industrial.jpg", "/industrial-2.jpg"],
   },
   // {
   //   slug: "home-automation",
@@ -249,7 +254,7 @@ export const services = [
       "Safety inspections & audits",
       "Load calculation & system evaluation",
     ],
-    images: ["/consultation-3.jpg", "/consultation.jpg", "/consultation-2.jpg"],
+    images: ["/consultation-4.jpg", "/consultation.jpg", "/consultation-2.jpg"],
   },
 ];
 

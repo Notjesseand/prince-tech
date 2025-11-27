@@ -38,7 +38,7 @@ const Page = () => {
       title: "Building & Construction Electrical Supervision",
       desc: "We provide expert oversight for construction projects — ensuring electrical work is done to standard, follows safety regulations, and meets engineering requirements.",
       bg: "/supervison.jpg",
-      slug: "industrial-electrical",
+      slug: "construction-projects",
     },
     {
       title: "Solar, Generator & Power Systems Setup",
