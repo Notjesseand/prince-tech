@@ -138,6 +138,24 @@ export const services = [
     images: ["/wiring-8.jpg", "/switch.jpg", "/socket.jpg"],
   },
   {
+    slug: "construction-projects",
+    title: "Construction & Building Services",
+    description:
+      "Princetech delivers professional construction solutions ranging from full-scale building projects to structural renovations. Our team ensures quality workmanship, safety compliance, and modern engineering standards across every phase of construction.",
+    features: [
+      "Building Construction (Residential & Commercial)",
+      "Renovation & Remodeling",
+      "Structural Repairs & Reinforcements",
+      "Architectural Planning & Design Support",
+      "Site Preparation & Project Management",
+    ],
+    images: [
+      "/services/construction.jpg",
+      "/services/tractor.jpg",
+      "/services/roofing.jpg",
+    ],
+  },
+  {
     slug: "wiring-rewiring",
     title: "Wiring & Rewiring",
     description:
@@ -231,11 +249,7 @@ export const services = [
       "Safety inspections & audits",
       "Load calculation & system evaluation",
     ],
-    images: [
-      "/consultation-3.jpg",
-      "/consultation.jpg",
-      "/consultation-2.jpg",
-    ],
+    images: ["/consultation-3.jpg", "/consultation.jpg", "/consultation-2.jpg"],
   },
 ];
 

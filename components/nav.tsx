@@ -84,6 +84,7 @@ const Nav = () => {
                       href: "/services/electrical-installation",
                       label: "Electrical Installations",
                     },
+
                     {
                       href: "/services/wiring-rewiring",
                       label: "Wiring & Rewiring",
@@ -93,9 +94,14 @@ const Nav = () => {
                       label: "Inverter & Solar Solutions",
                     },
                     {
+                      href: "/services/construction-projects",
+                      label: "Construction & Building Services",
+                    },
+                    {
                       href: "/services/cctv-security",
                       label: "CCTV & Security Systems",
                     },
+
                     {
                       href: "/services/maintenance-repairs",
                       label: "Maintenance & Repairs",
