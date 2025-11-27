@@ -314,8 +314,8 @@ const Page = () => {
               </Link>
               <p className="flex items-center text-sm md:text-base">
                 <FaPhoneAlt className="mr-2 sm:mr-3" />
-                <a href="tel:+2349099097788" className="underline">
-                  +234 909 909 7788
+                <a href="tel:+2348063636497" className="underline">
+                  +234 806 363 6497
                 </a>
               </p>
             </motion.div>
@@ -612,16 +612,13 @@ const Page = () => {
             </p>
             <div className="space-y-4">
               <p className="flex items-center text-gray-700">
-                📍{" "}
-                <span className="ml-3">
-                  123 Main Street, Abia State, Nigeria
-                </span>
+                📍 <span className="ml-3">Abia State, Nigeria</span>
               </p>
               <p className="flex items-center text-gray-700">
-                📞 <span className="ml-3">+234 909 909 7788</span>
+                📞 <span className="ml-3">+234 806 3636 497</span>
               </p>
               <p className="flex items-center text-gray-700">
-                ✉️ <span className="ml-3">info@princetech.com</span>
+                ✉️ <span className="ml-3">ndukap23@gmail.com</span>
               </p>
             </div>
           </motion.div>

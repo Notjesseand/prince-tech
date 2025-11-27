@@ -387,16 +387,24 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-[#1A1A1D] text-gray-300 py-10 px-6 md:px-12 font-montserrat">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-10">
-        
         {/* Logo & About */}
         <div className="md:col-span-2">
-          <Link href="/" aria-label="Princetech Electricals homepage" className="inline-block">
-            <img src="/logo.png" alt="Princetech Electricals Logo" className="h-14 mb-4" />
+          <Link
+            href="/"
+            aria-label="Princetech Electricals homepage"
+            className="inline-block"
+          >
+            <img
+              src="/logo.png"
+              alt="Princetech Electricals Logo"
+              className="h-14 mb-4"
+            />
           </Link>
 
           <p className="text-sm leading-relaxed">
-            Delivering safe, reliable and professional electrical solutions for homes,
-            businesses and construction projects. Your safety and satisfaction are our priority.
+            Delivering safe, reliable and professional electrical solutions for
+            homes, businesses and construction projects. Your safety and
+            satisfaction are our priority.
           </p>
         </div>
 
@@ -405,7 +413,9 @@ const Footer: React.FC = () => {
           <h3 className="text-white font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <Link href="/" className="hover:text-orange-500 transition">Home</Link>
+              <Link href="/" className="hover:text-orange-500 transition">
+                Home
+              </Link>
             </li>
             <li>
               <button
@@ -416,10 +426,17 @@ const Footer: React.FC = () => {
               </button>
             </li>
             <li>
-              <Link href="/quote" className="hover:text-orange-500 transition">Quotation</Link>
+              <Link href="/quote" className="hover:text-orange-500 transition">
+                Quotation
+              </Link>
             </li>
             <li>
-              <Link href="/contact" className="hover:text-orange-500 transition">Contact</Link>
+              <Link
+                href="/contact"
+                className="hover:text-orange-500 transition"
+              >
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
@@ -448,18 +465,18 @@ const Footer: React.FC = () => {
           <ul className="space-y-2 text-sm">
             <li>
               <a
-                href="mailto:info@princetechelectricals.com"
+                href="mailto:ndukap23@gmail.com"
                 className="hover:text-orange-500"
               >
-                info@princetechelectricals.com
+                ndukap23@gmail.com
               </a>
             </li>
             <li>
-              <a href="tel:+2348001234567" className="hover:text-orange-500">
-                +234 800 123 4567
+              <a href="tel:+2348063636497" className="hover:text-orange-500">
+                +234 806 363 6497
               </a>
             </li>
-            <li>Enugu, Nigeria</li>
+            <li>Abia State, Nigeria</li>
           </ul>
         </div>
 
@@ -467,16 +484,36 @@ const Footer: React.FC = () => {
         <div>
           <h3 className="text-white font-semibold mb-4">Follow Us</h3>
           <div className="flex space-x-4">
-            <a href="#" target="_blank" className="hover:text-orange-500" aria-label="Facebook">
+            <a
+              href="#"
+              target="_blank"
+              className="hover:text-orange-500"
+              aria-label="Facebook"
+            >
               <FaFacebookF />
             </a>
-            <a href="#" target="_blank" className="hover:text-orange-500" aria-label="Twitter">
+            <a
+              href="#"
+              target="_blank"
+              className="hover:text-orange-500"
+              aria-label="Twitter"
+            >
               <FaTwitter />
             </a>
-            <a href="#" target="_blank" className="hover:text-orange-500" aria-label="LinkedIn">
+            <a
+              href="#"
+              target="_blank"
+              className="hover:text-orange-500"
+              aria-label="LinkedIn"
+            >
               <FaLinkedinIn />
             </a>
-            <a href="#" target="_blank" className="hover:text-orange-500" aria-label="Instagram">
+            <a
+              href="#"
+              target="_blank"
+              className="hover:text-orange-500"
+              aria-label="Instagram"
+            >
               <FaInstagram />
             </a>
           </div>
@@ -485,7 +522,8 @@ const Footer: React.FC = () => {
 
       {/* Bottom bar */}
       <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm">
-        © {new Date().getFullYear()} Princetech Electricals & General Services. All rights reserved.
+        © {new Date().getFullYear()} Princetech Electricals & General Services.
+        All rights reserved.
       </div>
     </footer>
   );
