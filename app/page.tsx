@@ -82,7 +82,7 @@ const Page = () => {
     {
       title: "",
       desc: "",
-      img: "/consultation.jpg",
+      img: "/management-2.jpg",
       icon: "",
     },
   ];
