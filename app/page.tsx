@@ -12,6 +12,11 @@ import { IoIosStar } from "react-icons/io";
 import Footer from "@/components/footer";
 import { motion } from "framer-motion";
 import Router from "next/router";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination, Autoplay } from "swiper/modules";
+
 import {
   Accordion,
   AccordionContent,
@@ -147,6 +152,18 @@ const Page = () => {
 
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
+  const images = ["/electrical-maintenance.jpg", "/services/motherboard.jpg"];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextImage = () => {
+    setCurrentIndex((prev) => (prev + 1) % images.length);
+  };
+
+  const prevImage = () => {
+    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
+
   useEffect(() => {
     // cycle through services every 4s on large screens only
     const interval = setInterval(() => {
@@ -216,7 +233,8 @@ const Page = () => {
         id="about"
         className="min-h-screen  bg-white grid grid-cols-1 md:grid-cols-2 gap-10 pt-10  "
       >
-        {/* image */}
+        {/* image carousel */}
+        {/* image */}{" "}
         <motion.div
           initial={{ opacity: 0, x: -60 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -224,13 +242,13 @@ const Page = () => {
           viewport={{ once: true, amount: 0.3 }}
           className="p-4 md:p-6 flex justify-center items-center"
         >
+          {" "}
           <img
             src="/electrical-maintenance.jpg"
             className="w-full max-w-lg rounded-3xl object-cover "
             alt="Workers"
-          />
+          />{" "}
         </motion.div>
-
         {/* about us desc */}
         <motion.div
           initial={{ opacity: 0, x: 60 }}
