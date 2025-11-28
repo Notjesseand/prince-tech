@@ -70,7 +70,7 @@ const Page = () => {
     {
       title: "",
       desc: "",
-      img: "/tools.jpg",
+      img: "/supervison.jpg",
       icon: "",
     },
     {
@@ -82,7 +82,7 @@ const Page = () => {
     {
       title: "",
       desc: "",
-      img: "/consultation-5.jpg",
+      img: "/consultation.jpg",
       icon: "",
     },
   ];
