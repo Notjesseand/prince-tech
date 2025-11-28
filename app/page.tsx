@@ -82,7 +82,7 @@ const Page = () => {
     {
       title: "",
       desc: "",
-      img: "/wiring-7.jpg",
+      img: "/consultation-5.jpg",
       icon: "",
     },
   ];
@@ -225,7 +225,7 @@ const Page = () => {
           className="p-4 md:p-6 flex justify-center items-center"
         >
           <img
-            src="/wiring.jpg"
+            src="/electrical-maintenance.jpg"
             className="w-full max-w-lg rounded-3xl object-cover "
             alt="Workers"
           />
