@@ -186,7 +186,7 @@ const Nav = () => {
 
               <div>
                 <Link
-                  href="/services/block-industry"
+                  href="/services/electrical-installation"
                   className="text-lg font-medium mb-2 hover:underline"
                 >
                   Services
