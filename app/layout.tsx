@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import WhatsappButton from "@/components/whatsappButton";
+import HolidayGreeting from "@/components/HolidayGreeting";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -44,6 +45,8 @@ export default function RootLayout({
       <body className="font-montserrat">
         {children}
         <Toaster />
+        <HolidayGreeting />{" "}
+        {/* It sits here quietly until the 10s timer ends */}
         <WhatsappButton />
       </body>
     </html>
