@@ -23,7 +23,7 @@ const HolidayGreeting = () => {
     const timer = setTimeout(() => {
       setOpen(true);
       setShowConfetti(true);
-    }, 5000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);
