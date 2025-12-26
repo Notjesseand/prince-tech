@@ -185,12 +185,6 @@ const Page = () => {
         {/* overlay */}
         <div className="absolute inset-0 bg-black/70"></div>
 
-        {/* <div className="absolute inset-0 z-0 pointer-events-none">
-          <div className="stars small"></div>
-          <div className="stars medium"></div>
-          <div className="stars large"></div>
-        </div> */}
-
         {/* NEW: Add the Snowfall component here */}
         <Snowfall />
 
@@ -241,7 +235,7 @@ const Page = () => {
       {/*  About Us*/}
       <div
         id="about"
-        className="min-h-screen  bg-white grid grid-cols-1 md:grid-cols-2 gap-10 pt-10  "
+        className="min-h-screen  bg-white grid grid-cols-1 md:grid-cols-2 gap-10 pt-10  z-50 relative"
       >
         {/* image carousel */}
         {/* image */}{" "}
@@ -352,7 +346,10 @@ const Page = () => {
       </div>
 
       {/* our services */}
-      <div id="our-services" className="min-h-screen pb-20 bg-[#e9f7fe] ">
+      <div
+        id="our-services"
+        className="min-h-screen pb-20 bg-[#e9f7fe] relative z-50"
+      >
         {/* section header */}
         <motion.p
           className="text-xl md:text-2xl text-center pt-14 md:pt-20 font-semibold text-orange-400"
@@ -457,10 +454,10 @@ const Page = () => {
         </motion.button>
       </div>
       {/* why choose us */}
-      <p className="text-2xl text-center mt-20 font-semibold text-orange-500">
+      <p className="text-2xl text-center mt-20 font-semibold text-orange-500 relative z-50">
         Why choose us?
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 pt-14 pb-20 px-4 items-stretch">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 pt-14 pb-20 px-4 items-stretch relative z-50">
         {why.map((why, index) => {
           const Icon = why?.icon;
           return (
@@ -501,7 +498,7 @@ const Page = () => {
           </p>
           <Link
             href="/quote"
-            className="px-6 sm:px-8 lg:px-10 py-2 bg-orange-500 text-white font-semibold rounded  mt-8 items-center inline-flex justify-center hover:bg-orange-600 transition "
+            className="px-6 sm:px-8 lg:px-10 py-2 bg-orange-500 text-white font-semibold rounded  mt-8 items-center inline-flex justify-center hover:bg-orange-600 transition relative z-50"
           >
             Get Quotation
             <IoArrowForwardCircleOutline className="ml-3 text-lg sm:text-xl shake-horizontal" />
@@ -509,7 +506,7 @@ const Page = () => {
         </div>
 
         {/* Image Section */}
-        <div className="flex justify-center md:justify-end">
+        <div className="flex justify-center md:justify-end relative z-50">
           <img
             src="/cons2.png"
             alt="Construction illustration"
@@ -523,7 +520,7 @@ const Page = () => {
         </div>
       </div>
       {/* testimonials */}
-      <div className="text-center pb-20 pt-24">
+      <div className="text-center pb-20 pt-24 relative z-50">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -574,7 +571,7 @@ const Page = () => {
         </div>
       </div>
       {/* FAQs */}
-      <div className="py-20 bg-gray-50">
+      <div className="py-20 bg-gray-50 relative z-50">
         <p className="text-2xl text-orange-500 text-center font-semibold">
           FAQs
         </p>
@@ -601,7 +598,7 @@ const Page = () => {
       {/* get in touch */}
       <div
         id="contact"
-        className="min-h-screen bg-[#f9f9f9] flex flex-col justify-center items-center px-6 md:px-16 py-16"
+        className="min-h-screen bg-[#f9f9f9] flex flex-col justify-center items-center px-6 md:px-16 py-16 relative z-50"
       >
         {/* Heading */}
         <motion.div
