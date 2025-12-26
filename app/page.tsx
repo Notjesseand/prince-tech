@@ -24,6 +24,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Link from "next/link";
+import Snowfall from "@/components/snowfall";
 
 const Page = () => {
   const services = [
@@ -184,17 +185,26 @@ const Page = () => {
         {/* overlay */}
         <div className="absolute inset-0 bg-black/70"></div>
 
+        {/* <div className="absolute inset-0 z-0 pointer-events-none">
+          <div className="stars small"></div>
+          <div className="stars medium"></div>
+          <div className="stars large"></div>
+        </div> */}
+
+        {/* NEW: Add the Snowfall component here */}
+        <Snowfall />
+
         {/* hero markup */}
         <div
           id="home"
-          className="relative flex flex-col h-full justify-center items-center text-center px-6"
+          className="relative flex flex-col h-full justify-center items-center text-center px-6 z-50"
         >
           {/* Main heading */}
           <motion.h1
             initial={{ opacity: 0, y: -40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="text-4xl md:text-6xl font-extrabold text-white leading-tight drop-shadow-lg max-w-3xl"
+            className="text-4xl md:text-6xl font-extrabold text-white leading-tight drop-shadow-lg max-w-3xl z-50"
           >
             Princetech Electricals & General Services
           </motion.h1>
