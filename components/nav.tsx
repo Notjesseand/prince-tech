@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { IoCartOutline } from "react-icons/io5";
-import { TbMenu } from "react-icons/tb";
+import { TbMenu, TbX } from "react-icons/tb"; 
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -159,6 +159,125 @@ const Nav = () => {
 
       {/* Mobile Menu (Sheet) */}
       <div className="flex md:hidden items-center gap-4 font-montserrat">
+        <Sheet open={open} onOpenChange={setOpen} modal={false}>
+          <button
+            onClick={() => setOpen(!open)}
+            className="p-2 rounded-md hover:bg-slate-300 relative z-[110]"
+          >
+            {open ? (
+              <TbX className="text-3xl text-white" />
+            ) : (
+              <TbMenu className="text-3xl text-white" />
+            )}
+          </button>
+
+          <SheetContent side="right" className="w-64">
+            <div className="flex flex-col gap-6 mt-8 font-montserrat text-center pt-4">
+              <button
+                onClick={() => {
+                  scrollToSection("home");
+                  setOpen(false);
+                }}
+                className="text-lg font-medium hover:underline"
+              >
+                Home
+              </button>
+
+              <button
+                onClick={() => {
+                  scrollToSection("about");
+                  setOpen(false);
+                }}
+                className="text-lg font-medium hover:underline"
+              >
+                About Us
+              </button>
+
+              {/* <button
+                onClick={() => scrollToSection("about")}
+                className="text-lg font-medium hover:underline"
+              >
+                About Us
+              </button> */}
+
+              <div>
+                <Link
+                  href="/services/electrical-installation"
+                  className="text-lg font-medium mb-2 hover:underline"
+                >
+                  Services
+                </Link>
+                <div className="flex flex-col gap-2 pl-3 mt-2">
+                  {[
+                    {
+                      href: "/services/electrical-installation",
+                      label: "Electrical Installations",
+                    },
+                    {
+                      href: "/services/construction-projects",
+                      label: "Construction & Building Services",
+                    },
+                    {
+                      href: "/services/wiring-rewiring",
+                      label: "Wiring & Rewiring",
+                    },
+                    {
+                      href: "/services/inverter-solar",
+                      label: "Inverter & Solar Solutions",
+                    },
+                    {
+                      href: "/services/cctv-security",
+                      label: "CCTV & Security Systems",
+                    },
+                    {
+                      href: "/services/maintenance-repairs",
+                      label: "Maintenance & Repairs",
+                    },
+                    {
+                      href: "/services/industrial-electrical",
+                      label: "Industrial Electrical Services",
+                    },
+
+                    {
+                      href: "/services/consultation-inspection",
+                      label: "Consultation & Inspection",
+                    },
+                  ].map((service, index) => (
+                    <Link
+                      key={index}
+                      href={service.href}
+                      onClick={() => setOpen(false)}
+                      className="underline"
+                    >
+                      {service.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              <button
+                onClick={() => scrollToSection("quote")}
+                className="text-lg font-medium hover:underline"
+              >
+                Quotation
+              </button>
+
+              <Link href="/contact" onClick={() => setOpen(false)}>
+                <button className="bg-orange-500 rounded-lg px-4 py-2 text-white hover:bg-orange-600 transition">
+                  Contact Us
+                </button>
+              </Link>
+
+              {/* ... Rest of your links ... */}
+
+              {/* Ensure all mobile links have setOpen(false) in their onClick */}
+            </div>
+          </SheetContent>
+        </Sheet>
+      </div>
+
+      {/* Mobile Menu (Sheet) */}
+      {/* <div className="flex md:hidden items-center gap-4 font-montserrat ">
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild>
             <button className="p-2 rounded-md hover:bg-slate-300">
@@ -254,7 +373,7 @@ const Nav = () => {
             </div>
           </SheetContent>
         </Sheet>
-      </div>
+      </div> */}
     </nav>
   );
 };
