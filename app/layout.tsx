@@ -45,7 +45,7 @@ export default function RootLayout({
       <body className="font-montserrat">
         {children}
         <Toaster />
-        <HolidayGreeting />{" "}
+        {/* <HolidayGreeting />{" "} */}
         {/* It sits here quietly until the 10s timer ends */}
         <WhatsappButton />
       </body>

@@ -10,10 +10,10 @@ export default function WhatsappButton() {
     <Link
       href={`https://wa.me/${phoneNumber}?text=${message}`}
       target="_blank"
-      className="heartbeat fixed bottom-6 right-6 bg-transparent hover:bg-green-600 text-white rounded-xl  z-50 transition-all flex items-center justify-center"
+      className="heartbeat fixed bottom-6 right-6 bg-green-500 p-1.5 hover:bg-green-600 text-white rounded-xl  z-50 transition-all flex items-center justify-center"
     >
-      {/* <FaWhatsapp size={30} /> */}
-      <img src="/whatsapp-icon.png" className="h-[72px] " alt="" />
+      <FaWhatsapp size={30} />
+      {/* <img src="/whatsapp-icon.png" className="h-[72px] " alt="" /> */}
     </Link>
   );
 }
